@@ -11,6 +11,6 @@ reverse listRev = rev lisRev []
 maxmin x = mm x (tailx) (headx) (headx)
         where mm x maxx minn
                 | x == [] = (max, min)
-                | (headx) > max = mm(tail x)(headx) minn
-                | (headx) < min = mm (tail x) maxx (headx)
-                | otherwise = mm (tail x) max min
+                | (headx) > maxx = mm (tailx)(headx) minn
+                | (headx) < minn = mm (tailx) maxx (headx)
+                | otherwise = mm (tail x) maxx minn
