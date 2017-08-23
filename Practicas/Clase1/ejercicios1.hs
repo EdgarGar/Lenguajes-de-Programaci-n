@@ -29,4 +29,4 @@ factorial(x) = x * (factorial(x-1))
 --Funcion que obtiene los "n" ultimos elemntos de una lista
 lastt a [] = error "e"
 lastt a [e] = e
-lastt
+
