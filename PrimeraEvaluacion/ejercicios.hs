@@ -1,3 +1,4 @@
+--Edgar Adrian Garcia Villegas
 import Data.List
 
 --Ejercico1
