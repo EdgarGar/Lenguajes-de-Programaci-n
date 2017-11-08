@@ -37,9 +37,9 @@ sameList([H|T],[H1|T1]):-H=:=H1, sameList(T, T1).
 split(A, X, Y) :- append(X, Y, A), length(X, A), length(Y, B), A =:=B, !.
 
 /*Maximo de una lista*/
-arrLista([], A, B) :- A is B
-arrLista([H|T], A, B) :- H > A, arrLista(T, H, B)
-arrLista([H|T],A, B):- H =< A, arrLista(T, A, B)
+arrLista([], A, B) :- A is B.
+arrLista([H|T], A, B) :- H > A, arrLista(T, H, B).
+arrLista([H|T],A, B):- H =< A, arrLista(T, A, B).
 
 
 
